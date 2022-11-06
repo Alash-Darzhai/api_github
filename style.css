@@ -1,0 +1,65 @@
+body {
+    background-color: #C4C4C4;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin: 150px auto;
+    width: 500px;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.search-input input {
+    width: 500px;
+    height: 55px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.search-list li {
+    height: 44px;
+    background-color: #E3E3E3;
+    list-style: none;
+    padding-left: 13px;
+    vertical-align: auto;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.search-list li:hover {
+    background-color: #65CDF9;
+}
+
+.repo-list {
+    background-color: #E27BEB;
+    list-style: none;
+}
+
+.repo-item {
+    position: relative;
+    border: 1px solid #000000;
+    padding: 8px 18px 8px 15px;
+    vertical-align: auto;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.repo-remove::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    right: 34px;
+    background-image: url("../icon/cross.svg");
+    width: 42px;
+    height: 42px;
+}

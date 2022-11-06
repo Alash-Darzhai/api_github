@@ -59,7 +59,7 @@ body {
     position: absolute;
     top: 31px;
     right: 34px;
-    background-image: url("../icon/cross.svg");
+    background-image: url("icon/cross.svg");
     width: 42px;
     height: 42px;
 }

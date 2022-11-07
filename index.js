@@ -44,10 +44,10 @@ function serachUsers(e) {
               listTagAdd.appendChild(listTagListRemove);
               listTagListRemove.addEventListener('click', () => {
                 listTagAdd.remove();
-              });
+              }, { once: true });
               inputBox.value = '';
               searchBox.innerHTML = '';
-            });
+            }, { once: true });
           });
         });
       } else {
@@ -61,3 +61,4 @@ function serachUsers(e) {
 }
 
 searchWrapper.addEventListener('keyup', debounce(serachUsers, 1000));
+
